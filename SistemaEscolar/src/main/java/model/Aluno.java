@@ -12,11 +12,11 @@ public class Aluno {
 
 
     // Construtor  para CRIAR um novo aluno
-    public Aluno(String nome, LocalDate data_nascimento, String cpf, String email, String telefone) {
+    public Aluno(String nome, String cpf, String email,  LocalDate data_nascimento, String telefone) {
         this.nome = nome;
-        this.data_nascimento = data_nascimento;
-        this.cpf = cpf;
         this.email = email;
+        this.cpf = cpf;
+        this.data_nascimento = data_nascimento;
         this.telefone = telefone;
     }
 
@@ -86,6 +86,8 @@ public class Aluno {
                 id, nome, cpf, email, data_nascimento, telefone
         );
     }
+
+
 }
 
 
